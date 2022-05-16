@@ -38,7 +38,7 @@ cd tiny/ && make
 ```
 You should now see a `tiny_compiler.out` excutable file. Create a `.tny` file and add your TINY language code to it, or simply test with the sample file included [sample.tny](tiny/sample.tny).
 ```bash
-./tiny/tiny_compiler.out sample.tny
+./tiny_compiler.out sample.tny
 ```
 This will print logs from various stages of the compilation, and you'll see your output TM assembly file, `sample.tm`. Use the Tiny Machine to excute it.
 ### Tiny Machine 
