@@ -28,31 +28,27 @@ The parser is implemented by specifying C-'s grammar using the BNF notation for 
 
 ## How to Use
 Clone this repo and cd to it: 
-<br>(this will clone into your home directory; feel free to change the paths used here)
 ```bash 
-git clone https://github.com/nourgaser/CMinusCompiler ~/CMinusCompiler && 
-cd ~/CMinusCompiler
+git clone https://github.com/nourgaser/CMinusCompiler && cd CMinusCompiler
 ```
 ### Tiny Compiler
 cd to [`tiny`](tiny) and compile using the Makefile.
 ```bash
-cd ~/CMinusCompiler/tiny &&
-make
+cd tiny/ && make
 ```
 You should now see a `tiny_compiler.out` excutable file. Create a `.tny` file and add your TINY language code to it, or simply test with the sample file included [sample.tny](tiny/sample.tny).
 ```bash
-~/CMinusCompiler/tiny/tiny_compiler.out sample.tny
+./tiny/tiny_compiler.out sample.tny
 ```
 This will print logs from various stages of the compilation, and you'll see your output TM assembly file, `sample.tm`. Use the Tiny Machine to excute it.
 ### Tiny Machine 
 cd to [tm](tm) and compile using the Makefile.
 ```bash
-cd ~/CMinusCompiler/tm &&
-make
+cd tm/ && make
 ```
 You should now see a `tm.out` excutable file. Create a `.tm` file and add your Tiny Machine assembly code to it, or simply test with the sample file included, [sample.tm](tm/sample.tm). (Or use the output `sample.tm` file you got from your Tiny Compiler!)
 ```bash
-~/CMinusCompiler/tm/tm.out sample.tm
+./tm/tm.out sample.tm
 ```
 ### C- (C Minus)
 **WiP**
