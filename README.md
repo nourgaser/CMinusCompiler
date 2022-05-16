@@ -27,7 +27,8 @@ The scanner is implemented by specifying C-'s tokens using regex for LEX to gene
 The parser is implemented by specifying C-'s grammar using the BNF notation for YACC to generate the parser in C.
 
 ## How to Use
-Clone this repo and cd to it:
+Clone this repo and cd to it: 
+<br>(this will clone into your home directory; feel free to change the paths used here)
 ```bash 
 git clone https://github.com/nourgaser/CMinusCompiler ~/CMinusCompiler && 
 cd ~/CMinusCompiler
