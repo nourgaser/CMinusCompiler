@@ -50,7 +50,7 @@ cd to [tm](tm) and compile using the Makefile.
 cd ~/CMinusCompiler/tm &&
 make
 ```
-You should now see a tm.out excutable file. Create a .tm file and add your Tiny Machine assembly code to it, or simply test with the sample file included, [sample.tm](tm/sample.tm). (Or use the output `sample.tm` file you got from your Tiny Compiler!)
+You should now see a `tm.out` excutable file. Create a `.tm` file and add your Tiny Machine assembly code to it, or simply test with the sample file included, [sample.tm](tm/sample.tm). (Or use the output `sample.tm` file you got from your Tiny Compiler!)
 ```bash
 ~/CMinusCompiler/tm/tm.out sample.tm
 ```
