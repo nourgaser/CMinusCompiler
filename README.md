@@ -3,7 +3,7 @@
 
 - Reference book: [Compiler Construction: Principles and Practice](https://www.amazon.com/Compiler-Construction-Principles-Kenneth-Louden/dp/0534939724), by Kenneth C. Louden.
 
-- [The Tiny Machine](https://www.amazon.com/Compiler-Construction-Principles-Kenneth-Louden/dp/0534939724): a simulator in C for the Tiny Machine; a program that executes custom assembly [*.tm](tm/sample.tm) file. Its source code is provided in the book's appendix C.
+- [The Tiny Machine](https://www.amazon.com/Compiler-Construction-Principles-Kenneth-Louden/dp/0534939724): a simulator in C for the Tiny Machine; a program that executes custom assembly [*.tm](tm/sample.tm) files. Its source code is provided in the book's appendix C.
 
 - The Tiny programming language: a very simple programming language ([keywords and rules](docs/img/tiny_rules.png) specified at p.22 of the book).
 
