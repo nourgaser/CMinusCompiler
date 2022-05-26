@@ -51,7 +51,18 @@ You should now see a `tm.out` excutable file. Create a `.tm` file and add your T
 ./tm.out sample.tm
 ```
 ### C- (C Minus)
-**WiP**
+#### Only the scanner for C-Minus was implemented; as instructed by the project's updated requirements. (Feel free to contribute and implement the rest).
+cd to [cminus](cminus) and use the Makefile to generate the excutable scanner.
+```bash
+cd cminus/ && make
+```
+You should now see a `cminus_scanner.out` excutable file. Create a `.cm` file and add your C-Minus source code to it, or simply test with the sample file included, [sample.cm](cminus/sample_programs/sample.cm). Pass your `.cm` file to it:
+```bash
+./cminus_scanner.out sample_programs/sample.cm
+```
+If all goes well, you should see a log saying 'Done.', and an output file `scanner_out.txt` containing the result of the scanning phase of the C-Minus compiler.
+![output image](docs/img/cminus_scanner_output.png)
+
 
 ## Team Members
 | Name        | ID           |
