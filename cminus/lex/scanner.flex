@@ -99,5 +99,6 @@ int main(int argc, char *argv[])
 	fclose(ifp);
 	fclose(ifp2);
 	fclose(yyout);
+	free(currLinebuffer);
 	return 0;
 }
