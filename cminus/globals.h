@@ -1,16 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
-
-#ifndef FALSE
-#define FALSE 0
-#endif
-
-#ifndef TRUE
-#define TRUE 1
-#endif
-
 /* MAXRESERVED = the number of reserved words */
 #define MAXRESERVED 27
 
@@ -90,13 +77,3 @@ const struct
     {ID,"ID"},
     {NUM,"NUM"},
 };
-
-// /* lookup an identifier to see if it is a reserved word */
-// /* uses linear search */
-// static TokenType reservedLookup (char * s)
-// { int i;
-//   for (i=0;i<MAXRESERVED;i++)
-//     if (!strcmp(s,reservedWords[i].str))
-//       return reservedWords[i].tok;
-//   return ID;
-// }

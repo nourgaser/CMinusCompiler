@@ -44,9 +44,9 @@ while		    {return WHILE;}
 	/* multicharacter tokens */
 {number}        {return NUM;}
 {identifier}    {return ID;}
-{newline}       {return NEWLINE;}
 
-	/* whitespaces and tabs and comments */
+	/* whitespaces, newlines, tabs, and comments */
+{newline}       {return NEWLINE;}
 {whitespace}  	{return WHITESPACE;}
 {comment}  		{return COMMENT;}
 
@@ -62,13 +62,12 @@ int main(int argc, char *argv[])
 	FILE *ifp2 = fopen(argv[1],"r"); //for printing lines
 	
 	char *currLinebuffer;
-    size_t bufsize = 250;
-    size_t characters;
+    size_t bufsize = 250; //maximum 250 chars per line
 
     currLinebuffer = (char *)malloc(bufsize * sizeof(char));
     if( currLinebuffer == NULL)
     {
-        perror("Unable to allocate buffer");
+        perror("Unable to allocate buffer to read full lines");
         exit(1);
     }
 
